@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <server id="1" ip="127.0.0.1:9001">
+        <center inner="127.0.0.1:9001"/>
+    </server>
+</configuration>

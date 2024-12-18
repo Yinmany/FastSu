@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NLog" Version="5.3.4" />
+      <PackageReference Include="UniTask" Version="2.5.10" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\FastSu.Logging\FastSu.Logging.csproj" />
+      <ProjectReference Include="..\FastSu.Utils\FastSu.Utils.csproj" />
+    </ItemGroup>
+
+</Project>
