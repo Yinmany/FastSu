@@ -1,5 +1,7 @@
 # FastSu
 
+![Static Badge](https://img.shields.io/badge/version-0.0.0--beta-red)
+
 使用`C#`构建的一个轻快`服务器框架`
 
 * `Actor`模型
