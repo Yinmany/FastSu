@@ -1,6 +1,6 @@
 # FastSu
 
-![Static Badge](https://img.shields.io/badge/version-0.0.0--beta-red)
+[![NuGet](https://img.shields.io/nuget/v/FastSu.Server.svg)](https://www.nuget.org/packages/FastSu.Server)
 
 使用`C#`构建的一个轻快`服务器框架`
 
