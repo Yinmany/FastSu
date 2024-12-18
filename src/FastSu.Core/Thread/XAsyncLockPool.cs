@@ -119,7 +119,7 @@ public sealed class XAsyncLockPool
         public void Dispose() // 释放一次锁
         {
             --_num;
-            if (_queue.TryDequeue(out Action continuation))
+            if (_queue.TryDequeue(out Action? continuation))
             {
                 continuation();
             }

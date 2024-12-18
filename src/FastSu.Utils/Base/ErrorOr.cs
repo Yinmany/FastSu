@@ -7,7 +7,7 @@ public readonly record struct ErrorOr<T>
 
     public ErrorOr(int value)
     {
-        this.Value = default;
+        this.Value = default!;
         this.ErrorCode = value;
     }
 

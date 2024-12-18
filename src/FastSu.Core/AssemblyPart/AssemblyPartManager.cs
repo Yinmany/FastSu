@@ -42,7 +42,7 @@ public sealed class AssemblyPartManager : Singleton<AssemblyPartManager>
 
     private (string, string) GetDllAndPdbPath(string assemblyName)
     {
-        var currentDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+        var currentDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!;
 
         string dllFilePath = Path.Combine(currentDirectory, $"{assemblyName}.dll");
         string pdbFilePath = Path.Combine(currentDirectory, $"{assemblyName}.pdb");

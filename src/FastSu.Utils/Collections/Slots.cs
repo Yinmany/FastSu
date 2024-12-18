@@ -190,7 +190,7 @@ public class Slots<T> : IEnumerable<T>
     {
         foreach (KeyValuePair? value in _arr)
         {
-            if (value != null)
+            if (value != null && value.Value.Value != null)
                 yield return value.Value.Value;
         }
     }

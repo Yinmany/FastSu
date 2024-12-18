@@ -1,0 +1,23 @@
+<Project>
+    <PropertyGroup>
+        <IsPackable>true</IsPackable>
+
+        <Version>0.0.1-beta</Version>
+        <Authors>Yinmany</Authors>
+        <Company>FastSu</Company>
+        <Description>C# Game Server Framework</Description>
+
+        <Copyright>Copyright (c) Yinmany 2024</Copyright>
+
+        <RepositoryUrl>https://github.com/Yinmany/FastSu</RepositoryUrl>
+        <RepositoryType>github</RepositoryType>
+
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>License</PackageLicenseFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../../License" Pack="true" Visible="false" PackagePath=""/>
+        <None Include="../../README.md" Pack="true" Visible="false" PackagePath=""/>
+    </ItemGroup>
+</Project>

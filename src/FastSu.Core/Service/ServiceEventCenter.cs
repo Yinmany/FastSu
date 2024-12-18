@@ -83,8 +83,8 @@ public readonly struct ServiceEvent<T> where T : IService
 /// </summary>
 internal class ServiceEventCenter : Singleton<ServiceEventCenter>, IAssemblyPostProcess
 {
-    private Dictionary<int, IServiceEvent> _events;
-    private Dictionary<int, IServiceEvent>? _tmp;
+    private Dictionary<int, IServiceEvent> _events = null!;
+    private Dictionary<int, IServiceEvent> _tmp = null!;
 
     void IAssemblyPostProcess.Begin()
     {
@@ -103,7 +103,7 @@ internal class ServiceEventCenter : Singleton<ServiceEventCenter>, IAssemblyPost
     void IAssemblyPostProcess.End()
     {
         Interlocked.Exchange(ref _events, _tmp);
-        _tmp = null;
+        _tmp = null!;
     }
 
     public IServiceEvent? Get(int id)
