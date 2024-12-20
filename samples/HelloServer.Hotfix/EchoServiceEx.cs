@@ -1,6 +1,5 @@
 ﻿using Cysharp.Threading.Tasks;
 using FastSu;
-using FastSu.Core;
 
 namespace HelloServer;
 

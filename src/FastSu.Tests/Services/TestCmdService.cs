@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using Cysharp.Threading.Tasks;
 
-namespace FastSu.Core.Tests;
+namespace FastSu.Tests;
 
 public class TestCmdService : IService
 {

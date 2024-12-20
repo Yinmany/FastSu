@@ -1,4 +1,4 @@
-﻿namespace FastSu.Utils;
+﻿namespace FastSu;
 
 public class Map2<Tk, Tv> where Tk : notnull where Tv : notnull
 {

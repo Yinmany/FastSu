@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Runtime.CompilerServices;
 
-namespace FastSu.Utils;
+namespace FastSu;
 
 /// <summary>
 /// 基于插槽的集合

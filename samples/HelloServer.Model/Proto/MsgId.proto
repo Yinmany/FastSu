@@ -1,0 +1,9 @@
+syntax = "proto3";
+option csharp_namespace = "HelloServer";
+
+enum MsgId {
+  None = 0;
+  PingMsg = 1;
+  LoginReq = 2;
+  LoginAck = 3;
+}

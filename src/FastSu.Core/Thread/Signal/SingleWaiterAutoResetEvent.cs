@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks.Sources;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 /// <summary>
 /// Represents a synchronization event that, when signaled, resets automatically after releasing a single waiter.

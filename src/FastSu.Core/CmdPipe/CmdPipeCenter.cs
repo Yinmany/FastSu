@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 public sealed class CmdPipeCenter : Singleton<CmdPipeCenter>, IAssemblyPostProcess
 {

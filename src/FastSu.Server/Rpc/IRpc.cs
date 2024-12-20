@@ -1,5 +1,5 @@
 ﻿using System.Net;
-using FastSu.Core;
+using FastSu;
 
 namespace FastSu.Server.Rpc;
 

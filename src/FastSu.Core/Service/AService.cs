@@ -1,6 +1,6 @@
 using Cysharp.Threading.Tasks;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 /// <summary>
 /// 把事件全部转发到逻辑层

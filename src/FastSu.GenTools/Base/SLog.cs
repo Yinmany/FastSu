@@ -10,7 +10,15 @@ public static class SLog
 
     public static void Error(object msg)
     {
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine(msg);
+        ConsoleColor old = Console.ForegroundColor;
+        try
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(msg);
+        }
+        finally
+        {
+            Console.ForegroundColor = old;
+        }
     }
 }

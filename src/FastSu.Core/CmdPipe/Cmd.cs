@@ -1,7 +1,7 @@
 using System.Runtime.InteropServices;
 using Cysharp.Threading.Tasks;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 /// <summary>
 /// 总共16个字节

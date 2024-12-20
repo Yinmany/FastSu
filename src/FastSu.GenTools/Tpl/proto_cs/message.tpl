@@ -24,9 +24,9 @@ public partial class {{ name }} {{_t}}
     {{- if is_msg }}
     public const int _MsgId_ = {{ opcode }};
     public int MsgId => _MsgId_;
-    {{- end }}
+    {{- end ~}}
 
-    {{- if is_req }}
+    {{~ if is_req ~}}
     [ProtoMember(1)] public int RpcId { get; set; }
     {{- end }}
 
@@ -47,7 +47,11 @@ public partial class {{ name }} {{_t}}
     [ProtoMember({{order}})] public {{e.field_type}} {{e.name}} { get; set; }
         {{- end }}
     {{- end }}
+{{- end }} 
+{{- if !(string.empty enum_codes) }}
+    {{ enum_codes }} 
+{{- end -}}
+{{- if !(string.empty msg_codes) }}
+    {{ msg_codes }}
 {{- end }}
-    {{ enum_codes ~}}
-    {{~ msg_codes -}}
 }

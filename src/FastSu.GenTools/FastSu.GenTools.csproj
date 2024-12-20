@@ -7,6 +7,8 @@
         <LangVersion>12</LangVersion>
         <OutputType>Exe</OutputType>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>fastsu</ToolCommandName>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -23,32 +25,9 @@
     </ItemGroup>
     
     <ItemGroup>
-      <None Update="Tpl\proto_cs\message.tpl">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="Tpl\proto_cs\enum.tpl">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="Tpl\proto_cs\head.tpl">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="Tpl\memory_pack_cs\message.tpl">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="Tpl\memory_pack_cs\head.tpl">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="Tpl\memory_pack_cs\enum.tpl">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="Tpl\proto_cs\message.sbn-txt">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="conf.xml">
+      <None Update="Tpl\**\*.tpl">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
-      <None Update="Tpl\enum_cs.tpl">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
     </ItemGroup>
+
 </Project>

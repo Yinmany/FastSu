@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks.Sources;
-using FastSu.Utils;
+using FastSu;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 /// <summary>
 /// 使用 ValueTaskSource 的实现(因为需要捕获同步上下文)

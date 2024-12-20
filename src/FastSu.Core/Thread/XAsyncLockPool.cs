@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 /// <summary>
 /// 异步锁池

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Concurrent;
 using Cysharp.Threading.Tasks;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 public interface IServiceContext
 {

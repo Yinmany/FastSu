@@ -13,19 +13,16 @@ public class GenConfig
 public class ProtoConfig
 {
     [XmlAttribute("in")] public string In { get; set; }
-
     [XmlAttribute("out")] public string Out { get; set; }
-
+    [XmlAttribute("tpl_base")] public string TplBase { get; set; }
     [XmlAttribute("tpl")] public string Tpl { get; set; }
-
     [XmlAttribute("msg_id")] public string MsgId { get; set; }
 }
 
 public class EnumConfig
 {
     [XmlAttribute("in")] public string In { get; set; }
-
     [XmlAttribute("out")] public string Out { get; set; }
-
+    [XmlAttribute("tpl_base")] public string TplBase { get; set; }
     [XmlAttribute("tpl")] public string Tpl { get; set; }
 }

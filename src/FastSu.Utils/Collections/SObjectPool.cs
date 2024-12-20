@@ -1,7 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-namespace FastSu.Utils;
+namespace FastSu;
 
 public interface ISObjectPoolNode<T> where T : class
 {

@@ -1,4 +1,4 @@
-﻿namespace FastSu.Utils;
+﻿namespace FastSu;
 
 public readonly record struct ErrorOr<T>
 {

@@ -1,4 +1,4 @@
-using FastSu.Core;
+using FastSu;
 using NLog;
 using NLog.LayoutRenderers;
 

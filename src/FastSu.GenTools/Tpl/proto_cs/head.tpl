@@ -1,4 +1,5 @@
 ﻿using ProtoBuf;
+using FastSu;
 
 {{- for item in using_list }}
 using {{ item }};
@@ -6,5 +7,5 @@ using {{ item }};
 
 namespace {{namespace}}
 {
-    {{codes}}    
+    {{ codes }}    
 }

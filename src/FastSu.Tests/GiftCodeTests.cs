@@ -1,5 +1,5 @@
 ﻿using System.Text;
-using FastSu.Utils;
+using FastSu;
 
 namespace FastSu.Tests;
 

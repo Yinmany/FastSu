@@ -1,7 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
-using FastSu.Utils;
+using FastSu;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 /// <summary>
 /// 协程锁(必须在线程安全环境下使用)

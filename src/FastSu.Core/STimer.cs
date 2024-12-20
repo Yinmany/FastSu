@@ -1,4 +1,4 @@
-﻿namespace FastSu.Core;
+﻿namespace FastSu;
 
 /// <summary>
 /// 全局的定时器

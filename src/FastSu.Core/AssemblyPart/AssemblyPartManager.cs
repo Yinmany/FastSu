@@ -2,7 +2,7 @@
 using System.Runtime.Loader;
 using NLog;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 public sealed class AssemblyPartManager : Singleton<AssemblyPartManager>
 {

@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 /// <summary>
 /// 消息(总共16个字节)

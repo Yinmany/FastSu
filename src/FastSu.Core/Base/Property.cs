@@ -1,6 +1,6 @@
 using System.Runtime.InteropServices;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 /// <summary>
 /// 表示一个属性(8byte)

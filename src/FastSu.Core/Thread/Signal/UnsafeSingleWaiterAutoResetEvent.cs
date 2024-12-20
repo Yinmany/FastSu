@@ -1,6 +1,6 @@
 ﻿using Cysharp.Threading.Tasks;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 /// <summary>
 /// 只可在线程安全环境中使用

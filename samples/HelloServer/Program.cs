@@ -1,7 +1,6 @@
 ﻿using System.Net;
 using FastSu;
 using FastSu.Server;
-using FastSu.Core;
 using HelloServer;
 using NLog;
 

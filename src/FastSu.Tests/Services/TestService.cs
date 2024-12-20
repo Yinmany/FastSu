@@ -1,5 +1,5 @@
 ﻿using Cysharp.Threading.Tasks;
-using FastSu.Core;
+using FastSu;
 
 namespace FastSu.Tests;
 

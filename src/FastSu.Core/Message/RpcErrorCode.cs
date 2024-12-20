@@ -1,4 +1,4 @@
-﻿namespace FastSu.Core;
+﻿namespace FastSu;
 
 /// <summary>
 /// Rpc 错误码(1-100)

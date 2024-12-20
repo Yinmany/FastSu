@@ -2,7 +2,7 @@
 using System.Collections.Concurrent;
 using System.Net;
 using Cysharp.Threading.Tasks;
-using FastSu.Core;
+using FastSu;
 using Microsoft.AspNetCore.Connections;
 
 namespace FastSu.Server.Rpc;

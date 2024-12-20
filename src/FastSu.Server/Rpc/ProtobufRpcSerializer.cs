@@ -1,6 +1,6 @@
 ﻿using System.Buffers;
 using System.IO.Pipelines;
-using FastSu.Core;
+using FastSu;
 
 namespace FastSu.Server.Rpc;
 

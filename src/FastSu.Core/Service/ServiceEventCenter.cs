@@ -1,6 +1,6 @@
 ﻿using Cysharp.Threading.Tasks;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 public interface IServiceEvent
 {

@@ -1,5 +1,5 @@
 ﻿using System.Net;
-using FastSu.Core;
+using FastSu;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 

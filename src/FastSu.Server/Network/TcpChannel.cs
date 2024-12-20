@@ -2,7 +2,7 @@
 using System.Buffers.Binary;
 using System.IO.Pipelines;
 using System.Net;
-using FastSu.Utils;
+using FastSu;
 using Cysharp.Threading.Tasks;
 using Microsoft.AspNetCore.Connections;
 using Microsoft.IO;

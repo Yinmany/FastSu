@@ -1,4 +1,5 @@
-﻿using FastSu.GenTools.Base;
+﻿using System.Reflection;
+using FastSu.GenTools.Base;
 using Scriban;
 
 namespace FastSu.GenTools;
@@ -9,9 +10,14 @@ public static class TplHelper
     /// 加载模板
     /// </summary>
     /// <param name="path"></param>
+    /// <param name="basePath"></param>
     /// <returns></returns>
-    public static Template Load(string path)
+    public static Template Load(string path, string basePath = null)
     {
+        basePath ??= AppDomain.CurrentDomain.BaseDirectory;
+        if (!Path.IsPathRooted(path) && path != null)
+            path = Path.Combine(basePath, path);
+
         if (!File.Exists(path))
         {
             throw new Exception($"模板文件不存在: {path}");

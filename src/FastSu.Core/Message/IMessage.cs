@@ -1,4 +1,4 @@
-﻿namespace FastSu.Core;
+﻿namespace FastSu;
 
 public interface IMessageBase
 {

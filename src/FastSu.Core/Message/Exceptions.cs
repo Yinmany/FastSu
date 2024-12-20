@@ -1,4 +1,4 @@
-﻿namespace FastSu.Core;
+﻿namespace FastSu;
 
 /// <summary>
 /// 无效的服务Id异常

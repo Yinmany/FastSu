@@ -2,7 +2,7 @@ using System.Collections.Concurrent;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 public sealed class MessageTypes : Singleton<MessageTypes>
 {

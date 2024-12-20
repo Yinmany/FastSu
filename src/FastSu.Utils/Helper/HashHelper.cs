@@ -1,7 +1,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace FastSu.Utils
+namespace FastSu
 {
     public static partial class HashHelper
     {

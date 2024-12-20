@@ -1,4 +1,4 @@
-namespace FastSu.Core;
+namespace FastSu;
 
 /// <summary>
 /// 只用实现此接口的Entity才能作为Root

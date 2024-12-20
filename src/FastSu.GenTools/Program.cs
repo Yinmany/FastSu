@@ -14,10 +14,17 @@ public class Program
         public string Conf { get; set; }
     }
 
-    public static async Task Main(string[] args)
+    public static void Main(string[] args)
     {
         ParserResult<Options> result = Parser.Default.ParseArguments<Options>(args);
         Options options = result.Value;
+
+        if (!File.Exists(options.Conf))
+        {
+            SLog.Error($"配置文件不存在: {options.Conf}");
+            return;
+        }
+        SLog.Info($"conf: {options.Conf}");
 
         try
         {
@@ -36,7 +43,7 @@ public class Program
                     ProtoGen.Gen(proto);
                 }
             }
-            
+
             if (genConfig.Enum is { Length: > 0 })
             {
                 foreach (var item in genConfig.Enum)

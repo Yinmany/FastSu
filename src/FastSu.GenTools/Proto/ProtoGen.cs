@@ -16,9 +16,9 @@ public static class ProtoGen
         SLog.Info("==== 开始生成Proto ====");
 
         _config = config;
-        _headTpl = TplHelper.Load(Path.Combine(_config.Tpl, "head.tpl"));
-        _enumTpl = TplHelper.Load(Path.Combine(_config.Tpl, "enum.tpl"));
-        _msgTpl = TplHelper.Load(Path.Combine(_config.Tpl, "message.tpl"));
+        _headTpl = TplHelper.Load(Path.Combine(_config.Tpl, "head.tpl"), _config.TplBase);
+        _enumTpl = TplHelper.Load(Path.Combine(_config.Tpl, "enum.tpl"), _config.TplBase);
+        _msgTpl = TplHelper.Load(Path.Combine(_config.Tpl, "message.tpl"), _config.TplBase);
 
         // 载入消息id
         MsgIdFile.Load(Path.Combine(config.In, config.MsgId));
@@ -65,6 +65,17 @@ public static class ProtoGen
                     if (value == null)
                     {
                         SLog.Error($"未找到MsgId: {protoMessage.Name} {option.DefineStr}");
+                        return false;
+                    }
+
+                    protoMessage.Opcode = value.Index;
+                }
+                else
+                {
+                    var value = MsgIdFile.Get(protoMessage.Name);
+                    if (value == null)
+                    {
+                        SLog.Error($"未找到MsgId: {protoMessage.Name}");
                         return false;
                     }
 

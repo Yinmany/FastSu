@@ -1,6 +1,6 @@
 ﻿using System.Collections.Concurrent;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 /// <summary>
 /// 单线程模型的同步上下文

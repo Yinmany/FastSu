@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 /// <summary>
 /// 服务句柄(用于外部执行对服务的操作)

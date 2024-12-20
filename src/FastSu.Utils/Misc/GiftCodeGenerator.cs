@@ -1,4 +1,4 @@
-﻿namespace FastSu.Utils;
+﻿namespace FastSu;
 
 /// <summary>
 /// 礼包码生成器(10亿级)

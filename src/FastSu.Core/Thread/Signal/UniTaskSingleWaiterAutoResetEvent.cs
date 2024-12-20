@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using Cysharp.Threading.Tasks;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 /// <summary>
 /// 线程安全的单个等待者自动重置事件

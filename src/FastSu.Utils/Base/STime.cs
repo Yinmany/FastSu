@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace FastSu.Utils;
+namespace FastSu;
 
 /// <summary>
 /// 时间相关操作

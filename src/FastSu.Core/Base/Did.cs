@@ -1,6 +1,6 @@
-﻿using FastSu.Utils;
+﻿using FastSu;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 /// <summary>
 /// 分布式的id生成器(无锁线程安全)

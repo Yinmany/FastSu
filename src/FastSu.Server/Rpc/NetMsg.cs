@@ -1,4 +1,4 @@
-﻿using FastSu.Core;
+﻿using FastSu;
 
 namespace FastSu.Server.Rpc;
 

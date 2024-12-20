@@ -1,5 +1,6 @@
 ﻿using MemoryPack;
-using Chuan.Server.BaseLayer;
+using FastSu;
+
 {{ for item in using_list }}
 using {{ item }};
 {{- end }}

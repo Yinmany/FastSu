@@ -13,8 +13,7 @@ public static class EnumGen
     {
         SLog.Info("==== 开始生成Enum ====");
 
-        _tpl = TplHelper.Load(config.Tpl);
-
+        _tpl = TplHelper.Load(config.Tpl, config.TplBase);
         if (!File.Exists(config.In))
             throw new Exception($"xml文件不存在: {config.In}");
 

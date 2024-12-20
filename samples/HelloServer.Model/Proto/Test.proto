@@ -1,0 +1,22 @@
+//@using System
+
+syntax = "proto3";
+option csharp_namespace = "HelloServer";
+
+message PingMsg {
+}
+
+message LoginReq {
+  string Account = 1; // 账号
+  string Pwd = 2;     // 密码
+
+}
+
+message LoginAck {
+  string Token = 1;
+  string ServerAddr = 2;
+  
+  enum Result {
+    Success = 0;
+  }
+}

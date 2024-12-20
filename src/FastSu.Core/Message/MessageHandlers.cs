@@ -2,7 +2,7 @@
 using System.Reflection;
 using Cysharp.Threading.Tasks;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 internal sealed class MessageHandlers : Singleton<MessageHandlers>, IAssemblyPostProcess
 {

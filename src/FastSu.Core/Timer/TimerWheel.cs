@@ -1,7 +1,7 @@
 ﻿using System.Collections.Concurrent;
 using System.Diagnostics;
 
-namespace FastSu.Core;
+namespace FastSu;
 
 /// <summary>
 /// 时间轮(以10ms为一格;一轮最大可表示497天)

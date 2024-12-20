@@ -6,6 +6,7 @@
         <Nullable>enable</Nullable>
         <LangVersion>12</LangVersion>
         <PackageId>FastSu.Utils</PackageId>
+        <RootNamespace>FastSu</RootNamespace>
     </PropertyGroup>
 
 </Project>

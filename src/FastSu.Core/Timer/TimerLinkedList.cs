@@ -1,4 +1,4 @@
-﻿namespace FastSu.Core;
+﻿namespace FastSu;
 
 internal class TimerLinkedList
 {
